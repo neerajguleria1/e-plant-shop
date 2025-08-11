@@ -1,8 +1,8 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/e_plant_shop/",
   plugins: [react()],
-})
+  base: '/e-plant-shop/', // 👈 This fixes GitHub Pages 404 errors
+});
